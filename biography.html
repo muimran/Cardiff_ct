@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">CMT119 ASSESSMENT</h1> <!-- I would put a logo here as an image nested in an anchor, but I don't - so text will do for now.-->
+            <input type="checkbox" id="navigation-toggle" class="navigation-toggle"> <!-- creating nav toggle // Needs the ID tag to function with label, but prefer working with class for specifivity-->
+            <nav id="nav-bar-main">
+                <ul> <!-- the navigation bar options-->
+                    <li class="nav-main"><a href="index.html">Home</a></li>
+                    <li class="nav-main"><a href="computation.html">Computational Thinking</a></li>
+                    <li class="nav-main"><a href="biography.html">Biography</a></li>
+                    <li class="nav-main"><a href="reflection.html">Reflection</a></li>
+                </ul>
+            </nav>
+            <label for="navigation-toggle" class="navigation-toggle-label">
+                <span></span> <!--Seems empty but is used to replace checkbox with entire label in mobile nav toggle-->
+            </label>
+        </header>
+
+        <main> <!-- NEED HELP MAKING CSS GRID TO ALIGN THESE IMAGES! -->
+            <h1>GRACE HOPPER</h1>
+            <div class="responsive-container" id="bio-main-container">    
+                <div class="flex-subcontainer" id="bio-head-figure">
+                    <figure>
+                        <img src="img/grace_hopper.jpg" alt="Grace Hopper in the 1940s." id="bio-head-image">
+                        <figcaption style="text-align: left;"> <p><strong> Fig 1. Grace Hopper in the 1940s.</strong> Retrieved from <a href="https://upload.wikimedia.org/wikipedia/commons/6/6e/Grace_Hopper_in_the_1940s.webp" target="_blank" rel="noopener noreferrer">Wikimedia</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="flex-subcontainer" id="bio-background">
+                    <h2>Background</h2>
+                    <p>A computer scientist and United States Navy rear admiral, Grace Hopper, left an indelible mark on the field of computing. Born in New York City in 1906, Hopper’s curiosity and determination led her to break barriers both as a woman in a male-dominated field and as a visionary in technology.</p>
+                    <p>Hopper’s initial academic pursuits were in mathematics and physics, earning her a Ph.D. from Yale University in 1934. She then embarked on a teaching career at Vassar College, but World War II prompted a change in direction. In 1943, she joined the U.S. Navy Reserve, where her mathematical expertise was put to use in the early world of computing.</p>
+                    <p>While stationed at the Bureau of Ordnance Computation Project at Harvard University, Hopper worked on the Mark I, the first large-scale automatic calculator and a forerunner of electronic computers. Here, she co-authored a manual that set forth foundational concepts in computer programming.</p>
+                    <p>In the post-war era, Hopper's influence grew as she transitioned to the private sector. One of her most notable contributions was the development of the first compiler, a software tool that translates high-level programming language into machine code. This groundbreaking work paved the way for COBOL (Common Business-Oriented Language), one of the first high-level programming languages designed for business application. Due to Hopper's advocacy for machine-independent programming languages, software became more portable across different computer systems.</p>
+                    <p>Yet, Hopper's influence wasn’t restricted to her technical achievements. Known for her impeccable leadership skills, she returned to active naval service to guide the navy into the computer age. By the time she retired, she had reached the rank of rear admiral, making her one of the few women to achieve such a high rank.</p>
+                    <p>Throughout her life, Hopper was also an educator and a communicator. She had an innate ability to demystify complex technical concepts, making them accessible to a broad audience. She believed in the power of a "good idea".</p>
+                    <p>Grace Hopper passed away in 1992, but her legacy is far-reaching. Recognized for her contributions and her trailblazing spirit, she posthumously received the Presidential Medal of Freedom in 2016. Today, her name graces conferences, scholarships, and initiatives aimed at encouraging more women to pursue careers in technology. Hopper remains a beacon for those who dare to innovate, challenge norms, and redefine the boundaries of possibility.</p>
+                </div>
+            </div>
+        </main>
+
+
+            <div class="flex-subcontainer" id="bio-singularity-article">
+                <article>
+                    <h2>Technological Singularity</h2>
+                    <p>The idea of a technological singularity is the hypothetical point in time by which technological growth becomes uncontrollable and irreversible and human affairs as we know them would cease – often used as a basis for dystopian science-fiction and moral discussions on the advancement of artificial intelligence.</p>
+                    <figure>
+                        <img src="img/pexels-tara-winstead-8386422.jpg" alt="Picture in style of Creation of Adam using human and robotic hand" id="bio-singularity-image">
+                        <figcaption>Photograph of a human and robotic hand about to touch, in the style of The Creation of Adam. &mdash; Photo by <a href="https://www.pexels.com/@tara-winstead" target="_blank">Tara Winstead</a>.</figcaption>
+                    </figure>
+                    <p>The term ‘Singularity’ in this context is attributed to Neumann after discussions on the topic before his death in 1959 (The singularity: a philosphical analysis. Chalmers, David (2010)). Yet another of his thoughts remains relevant even considering the scope of our future.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="reference-container">
+            <p>(1952 Photograph of scientists infront of IAS computer from the Heinz Nixdorf Museums Forum site, available at: <a href="https://www.hnf.de/en/permanente-tentoonstelling/afdelingen/eregalerij/john-von-neumann-1903-1957.html" target="_blank">https://www.hnf.de/en/permanente-tentoonstelling/afdelingen/eregalerij/john-von-neumann-1903-1957.html</a> [Accessed: 23 October 2021])</p>
+            <p>(Henderson, Harry (2007). Mathematics: Powerful Patterns Into Nature and Society)</p>
+            <p>(N A Von-Neuman. John von Neumann: as seen by his brother (Meadowbrook, PA, 1987))</p>
+            <p>(Information on Neumanns academic career <a href="https://www.britannica.com/biography/John-von-Neumann/Princeton-1930-42" target="_blank">https://www.britannica.com/biography/John-von-Neumann/Princeton-1930-42</a> [Accessed 23 October 2021])</p>
+            <p>(John von Neumann. First Draft of a Report on the EDVAC, 1945)</p>
+            <p>(Chalmers, David (2010). "The singularity: a philosophical analysis". Journal of Consciousness Studies. 17 (9–10): 7–65.)</p>
+            <p>(Black and White Photo of Human Hand and Robot Hand by Tara Winstead, available at: <a href="https://www.pexels.com/photo/black-and-white-photo-of-human-hand-and-robot-hand-8386422/" target="_blank">https://www.pexels.com/photo/black-and-white-photo-of-human-hand-and-robot-hand-8386422/</a> [Accessed: 29 October 2021])</p>
+        </div>
+
+        <footer>
+            All content within this website was produced by myself unless stated otherwise with a reference.
+        </footer>
+    </body>
+</html>

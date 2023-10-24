@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">CMT119 ASSESSMENT</h1> <!-- I would put a logo here as an image nested in an anchor, but I don't - so text will do for now.-->
+            <input type="checkbox" id="navigation-toggle" class="navigation-toggle"> <!-- creating nav toggle // Needs the ID tag to function with label, but prefer working with class for specifivity-->
+            <nav id="nav-bar-main">
+                <ul> <!-- the navigation bar options-->
+                    <li class="nav-main"><a href="index.html">Home</a></li>
+                    <li class="nav-main"><a href="computation.html">Computational Thinking</a></li>
+                    <li class="nav-main"><a href="biography.html">Biography</a></li>
+                    <li class="nav-main"><a href="reflection.html">Reflection</a></li>
+                </ul>
+            </nav>
+            <label for="navigation-toggle" class="navigation-toggle-label">
+                <span></span> <!--Seems empty but is used to replace checkbox with entire label in mobile nav toggle-->
+            </label>
+        </header>
+
+        <main>
+            <h1>Computational Thinking</h1>
+            <h2>What is Computational Thinking?</h2>
+            <p>Computation Thinking (CT) is an approach to problem-solving which involves several strategies fundamental to computer science. According to BBC Bitesize, "Computational thinking allows us to take a complex problem, understand what the problem is and develop possible solutions. We can then present these solutions in a way that a computer, a human, or both, can understand" (BBC Bitesize, n.d.).</p>
+            <blockquote>
+                “CT Involves solving problems, designing systems, and understanding human behavior, by drawing on the concepts fundamental to computer science.”<br>&mdash; from <cite>Computational Thinking</cite> by J. M. Wing. 2006
+            </blockquote>
+            <p>Computational thinking has four key steps:</p>
+            <ul class="main-list" id="CT-elements-list">
+                <li class="CT-element"><strong>Decomposition</strong> - Breaking apart a complex problem into smaller parts. </li>
+                <li class="CT-element"><strong>Pattern Recognition</strong> – Recognizing similarities that might reveal larger trends or insights. </li>
+                <li class="CT-element"><strong>Abstraction</strong> – Distilling down a problem by stripping away the details that are not pertinent to the problem. </li>
+                <li class="CT-element"><strong>Algorithmic Thinking</strong> – Developing a step-by-step instruction to solve the problem. </li>
+            </ul>
+            <h2>Relevance to My Course</h2>
+            <p>In the context of my Computational and Data Journalism program, CT is an integral part. In the current digital age, journalism is not just about words, it is finding patterns and stories hidden inside vast amount of data. When I am faced with a massive dataset, say, donation to political parties from the past two decades, it is CT that helps me break it down (decomposition), spot donation trends (pattern recognition), focus on key data points (abstraction), and systematically analyse the information (algorithmic thinking).</p>
+            <p>But the role of CT does not end only in data analysis. As part of data journalism, I aim to tell compelling stories, I need to ensure that amidst the numbers, graphs, charts, and other visualizations, the core narrative isn't lost. Abstraction, the thirds step of CT assists me here, by making sure my audience grasps the core ideas without getting bogged down by complexities.</p>
+            <h2>Relevance to My Career</h2>
+            <p>As I plan my upcoming career as a data journalist, the significance of Computational Thinking becomes even more clear. Our current media landscape is going through very rapid technological shifts and in that context, CT provides me the foundation to innovatively harness these changes by crafting stories that are both engaging and current. Furthermore, the principles of CT, especially algorithmic thinking, offer possibilities for increased operational efficiency, such as by automating repetitive tasks, allowing me to focus more on in-depth investigative journalism and enrich the scope of my reporting.</p>
+            <p>My understanding of Computational Thinking is that it is not just an academic construct, it is a way of looking into the world. As I advance through my MSc program and transition into the professional sphere, Computational Thinking will be an integral part of my success as a data journalist.</p>
+        </main>
+
+        <div class="reference-container">
+            <p>J.M.Wing “Computational Thinking”, CACM viewpoint, vol.49 no.3 March 2006, pp.33-35</p>
+        </div>
+        
+        <footer>
+            All content within this website was produced by myself unless stated otherwise with a reference.
+        </footer>
+    </body>
+</html>
